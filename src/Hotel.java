@@ -27,6 +27,11 @@ public class Hotel extends Alojamiento{
 
     @Override
     public String toString() {
-        return this.getNombre() + ", en " + this.getCiudad() + " (hotel de (" + this.estrellas + " estrellas)";
+        // opcion 1
+        return this.getNombre() + ", en " + this.getCiudad() + " (hotel de " + this.estrellas + " estrellas)";
+        //opcion 2
+        // return this.nombre + ", en " + this.ciudad + " (hotel de " + this.estrellas + " estrellas)";
+        // opcion 3 (llamar al toString del padre)
+        // return super.toString() + + " (hotel de " + this.estrellas + " estrellas)";
     }
 }

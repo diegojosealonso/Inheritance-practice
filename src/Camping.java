@@ -10,8 +10,7 @@ public class Camping extends Alojamiento{
         this.tienePiscina = tienePiscina;
     }
 
-    public Camping(String nombre, double precioNoche, String ciudad) {
-        super(nombre, precioNoche, ciudad);
+    public Camping() {
     }
 
     public int getNumCaravanas() {
