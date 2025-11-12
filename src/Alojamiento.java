@@ -37,8 +37,7 @@ public class Alojamiento {
     }
 
     public double calcularPrecio(int numNoches){
-        double precio = numNoches * this.precioNoche;
-        return precio;
+        return numNoches * this.precioNoche;
     }
 
     @Override

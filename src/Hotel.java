@@ -8,14 +8,13 @@ public class Hotel extends Alojamiento{
         this.desayunoIncluido = desayunoIncluido;
     }
 
-    public Hotel(String nombre, double precioNoche, String ciudad) {
-        super(nombre, precioNoche, ciudad);
+    public Hotel() {
     }
 
     public Hotel(String nombre, double precioNoche, String ciudad, int estrellas) {
         super(nombre, precioNoche, ciudad);
         this.estrellas = estrellas;
-        this.desayunoIncluido = false;
+        // el boolean en minúscula ya adquiere un valor "false" por defecto
     }
 
     public int getEstrellas() {

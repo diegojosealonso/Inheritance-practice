@@ -38,5 +38,12 @@ public class Camping extends Alojamiento{
         this.tienePiscina = tienePiscina;
     }
 
+    public int getCapacidadRestante(){
+        return this.capacidadCaravanas - this.numCaravanas;
+    }
 
+    @Override
+    public String toString() {
+        return this.getNombre() + ", en " + this.getCiudad() + " (camping con capacidad para " + this.capacidadCaravanas + " caravanas)";
+    }
 }
